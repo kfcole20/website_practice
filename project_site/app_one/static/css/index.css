@@ -1,0 +1,15 @@
+*{
+    margin: 0px auto;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container form{
+    text-align: right;
+}
+
+input{
+    margin-bottom: 10px;
+}

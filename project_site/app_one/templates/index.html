@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Login or Register</title>
+        {% load static%}
+        <meta name='description' content= 'login and registration page'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' href="{%static 'css/index.css'%}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="register">
+                <h2>Register</h2>
+                <form action="/register" method="post">
+                    {%csrf_token%}
+                    First Name:<input type="text" id="fname" name="fname"><br>
+                    Last Name:<input type="text" id="lname" name="lname"><br>
+                    Email:<input type="text" id="email" name="email"><br>
+                    Password: <input type="password" name="pw" id="pw"><br>
+                    Confirm Password:<input type="password" name="pw_conf" id="pw_conf"><br>
+                    <button type="submit">Enter</button>
+                </form>
+            </div>
+            <div class="login">
+                <h2>Login</h2>
+                <form action="/register" method="post">
+                    {%csrf_token%}
+                    Email:<input type="text" id="email" name="email"><br>
+                    Password: <input type="password" name="pw" id="pw"><br>
+                    <button type="submit">Enter</button>
+                </form>
+            </div>
+
+
+
+        </div>
+
+
+    </body>
+</html>
